@@ -16,7 +16,8 @@
 			"database"
 		],
 		"psr-4": {
-			"Votemike\\": "app/"
+			"Votemike\\": "app/",
+			"Election\\": "app/Election"
 		}
 	},
 	"autoload-dev": {

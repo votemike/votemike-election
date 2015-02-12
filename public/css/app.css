@@ -6231,3 +6231,7 @@ label,
 .checkbox label {
   font-weight: 300;
 }
+footer {
+  float: right;
+  margin-right: 10px;
+}
