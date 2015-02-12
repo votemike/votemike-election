@@ -12,7 +12,15 @@
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		@yield('content')
+		@include('mainnav')
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					@yield('header')
+					@yield('content')
+				</div>
+			</div>
+		</div>
 
 		<footer>
 			@section('credits')
