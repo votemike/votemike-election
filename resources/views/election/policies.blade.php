@@ -16,7 +16,7 @@
 		</div>
 	@endif
 
-	<form class="form-horizontal" role="form" method="POST" action="/election/policy">
+	<form class="form-horizontal clearfix" role="form" method="POST" action="/election/policy">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 		@foreach($policies as $policy)
@@ -37,4 +37,10 @@
 			</button>
 		</div>
 	</form>
+	<div class="clearfix">
+		<h6>Sources</h6>
+		<ul>
+			<li><a href="http://www.bbc.co.uk/news/uk-politics-29642613">BBC News</a></li>
+		</ul>
+	</div>
 @endsection
