@@ -43,6 +43,10 @@ class RouteServiceProvider extends ServiceProvider {
 		{
 			require app_path('Election/routes.php');
 		});
+		$router->group(['namespace' => 'Votemike\DbHelper'], function($router)
+		{
+			require app_path('DbHelper/routes.php');
+		});
 	}
 
 }
